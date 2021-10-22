@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script
+        src="https://www.paypal.com/sdk/js?client-id=AQ5g8nn9aROkHblV7Ljd5PJKV5Tr_cmh4WE6HrGy0GRCUyHOQKuQ7lOqMCdX9D31pAVSVcryYpROoTGY&enable-funding=venmo&currency=USD"
+        data-sdk-integration-source="button-factory"></script>
+    <script src="script.js"></script>
+    <title>Payment</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1 class="font-title">Shopping Cart</h1>
+    </div>
+    <div class="container-md cart">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img
+                            src="https://vn-live-05.slatic.net/p/a13d04587ee002cd8518ff1c95fab266.jpg_200x200q80.jpg_.webp">
+                        <div>
+                            <p>ASUS ROG Zephyrus Duo 15 GX550LWS-HF102T</p>
+                            <span>Price: 3000$</span> <br /> <a href="#">remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" min="1"></td>
+                <td>3000$</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img
+                            src="https://cdn.tgdd.vn/Products/Images/44/246077/lenovo-yoga-7-14itl5-i5-82bh00cjvn-600x600.jpg">
+                        <div>
+                            <p>Laptop Lenovo Yoga 9 14ITL5 i7</p>
+                            <span>Price: 2000$</span> <br /> <a href="#">remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" min="1"></td>
+                <td>2000$</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Total</td>
+                    <td>5000$</td>
+                </tr>
+            </table>
+            <div id="smart-button-container">
+                <div style="text-align: center;">
+                    <div id="paypal-button-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="smart-button-container">
+        <div style="text-align: center;">
+            <div id="paypal-button-container"></div>
+        </div>
+    </div>
+    <div id="smart-button-container">
+        <div style="text-align: center;">
+          <div id="paypal-button-container"></div>
+        </div>
+      </div>
+    </script>
+</body>
+
+</html>
